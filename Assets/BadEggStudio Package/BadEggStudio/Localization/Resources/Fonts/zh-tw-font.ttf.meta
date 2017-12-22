@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: d3f565e95717a4f4eb5562d3b7c45880
+timeCreated: 1513842973
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Tensentype TongSongF
+  fontNames:
+  - Tensentype TongSongF
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 197721b860e8fdb48b19bf05a52eb00d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

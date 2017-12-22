@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1261410480296960}
+  m_IsPrefabParent: 1
+--- !u!1 &1261410480296960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4777480524952170}
+  - component: {fileID: 114246588446358968}
+  m_Layer: 0
+  m_Name: uEasyLocaliszer_DemoScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4777480524952170
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1261410480296960}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114246588446358968
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1261410480296960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf8cff8bd6305204d90a3dd50faba02c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLang: 0
+  localizeDB:
+    m_keys:
+    - DEMO_TITLE_KEY
+    - DEMO_CONTENT_1_KEY
+    - DEMO_CONTENT_2_KEY
+    - DEMO_CONTENT_3_KEY
+    - DEMO_CHANGE_ZHTW_KEY
+    - DEMO_CHANGE_ZHCN_KEY
+    - DEMO_CHANGE_ENUS_KEY
+    - DEMO_CHANGE_ENGB_KEY
+    m_values:
+    - m_keys: 00000000010000000200000003000000
+      m_values:
+      - "\u9019\u662F\u6A19\u984C"
+      - "\u8FD9\u662F\u6807\u9898"
+      - This is title_GB
+      - This is title_US
+    - m_keys: 00000000010000000200000003000000
+      m_values:
+      - "\u9019\u662F\u5167\u5BB91"
+      - "\u8FD9\u662F\u5185\u5BB91"
+      - This is content 1_GB
+      - This is content 1_US
+    - m_keys: 00000000010000000200000003000000
+      m_values:
+      - "\u9019\u662F\u5167\u5BB92"
+      - "\u8FD9\u662F\u5185\u5BB92"
+      - This is content 2_GB
+      - This is content 2_US
+    - m_keys: 00000000010000000200000003000000
+      m_values:
+      - "\u9019\u662F\u5167\u5BB93"
+      - "\u8FD9\u662F\u5185\u5BB93"
+      - This is content 3_GB
+      - This is content 3_US
+    - m_keys: 00000000010000000200000003000000
+      m_values:
+      - "\u7E41\u9AD4\u4E2D\u6587"
+      - "\u7E41\u4F53\u4E2D\u6587"
+      - Traditional Chinese
+      - Traditional Chinese
+    - m_keys: 00000000010000000200000003000000
+      m_values:
+      - "\u7C21\u9AD4\u4E2D\u6587"
+      - "\u7B80\u4F53\u4E2D\u6587"
+      - Simplified Chinese
+      - Simplified Chinese
+    - m_keys: 00000000010000000200000003000000
+      m_values:
+      - "\u7F8E\u5F0F\u82F1\u6587"
+      - "\u7F8E\u5F0F\u82F1\u6587"
+      - American English
+      - American English
+    - m_keys: 00000000010000000200000003000000
+      m_values:
+      - "\u82F1\u5F0F\u82F1\u6587"
+      - "\u82F1\u5F0F\u82F1\u6587"
+      - British English
+      - British English
+  fontDB:
+    m_keys: 00000000010000000200000003000000
+    m_values:
+    - {fileID: 12800000, guid: 197721b860e8fdb48b19bf05a52eb00d, type: 3}
+    - {fileID: 12800000, guid: e8a5b6d21afdcde42bca67a42e3526cc, type: 3}
+    - {fileID: 12800000, guid: bbf2dee2eeccef047aab3ac1daacf9bd, type: 3}
+    - {fileID: 12800000, guid: 9334ae91b9886a54ba3a80897711cac2, type: 3}

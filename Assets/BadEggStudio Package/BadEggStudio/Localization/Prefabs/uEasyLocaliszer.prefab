@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1355688459794090}
+  m_IsPrefabParent: 1
+--- !u!1 &1355688459794090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4920629834774618}
+  - component: {fileID: 114391064396940474}
+  m_Layer: 0
+  m_Name: uEasyLocaliszer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4920629834774618
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1355688459794090}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114391064396940474
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1355688459794090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf8cff8bd6305204d90a3dd50faba02c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLang: 0
+  localizeDB:
+    m_keys:
+    - HELLO_WORLD
+    - CHANGE_TW_BTN_TEXT
+    - CHANGE_ENUS_BTN_TEXT
+    - OK_BTN_TEXT
+    - START_BTN_TEXT
+    m_values:
+    - m_keys: 00000000010000000200000003000000
+      m_values:
+      - "\u4E16\u754C\u4F60\u597D_TW"
+      - "\u4E16\u754C\u4F60\u597D_CN"
+      - Hello World_GB
+      - Hello World_US
+    - m_keys: 00000000010000000200000003000000
+      m_values:
+      - "\u7E41\u9AD4\u4E2D\u6587"
+      - "\u7E41\u9AD4\u4E2D\u6587"
+      - Traditional Chinese
+      - Traditional Chinese
+    - m_keys: 00000000010000000200000003000000
+      m_values:
+      - "\u82F1\u6587"
+      - "\u82F1\u6587"
+      - English
+      - English
+    - m_keys: 00000000010000000200000003000000
+      m_values:
+      - "\u63D0\u4EA4"
+      - "\u63D0\u4EA4"
+      - OK
+      - OK
+    - m_keys: 00000000010000000200000003000000
+      m_values:
+      - "\u958B\u59CB"
+      - "\u958B\u59CB"
+      - Start
+      - Start
+  fontDB:
+    m_keys: 00000000010000000200000003000000
+    m_values:
+    - {fileID: 12800000, guid: d3f565e95717a4f4eb5562d3b7c45880, type: 3}
+    - {fileID: 12800000, guid: 8a1098f640afe1d4eadef22c8ae331e4, type: 3}
+    - {fileID: 12800000, guid: db170d52b52f93447867e75fdbdc6a2f, type: 3}
+    - {fileID: 12800000, guid: 83291ebba0e65bf4e808461a70d4eab9, type: 3}

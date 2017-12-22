@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: bbf2dee2eeccef047aab3ac1daacf9bd
+timeCreated: 1513569791
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bleeding Cowboys
+  fontNames:
+  - Bleeding Cowboys
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
