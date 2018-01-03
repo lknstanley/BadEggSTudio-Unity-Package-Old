@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace BadEggStudio.Utils {
-	public class CommonHelper : Singleton<CommonHelper> {
+	// public class CommonHelper : Singleton<CommonHelper> {
+	public static class CommonHelper {
 		
 		// logger properties
 		private static bool isDevMode = true;
@@ -45,8 +46,10 @@ namespace BadEggStudio.Utils {
 		/// </summary>
 		/// <param name="trans">Transform where you are going to change.</param>
 		/// <param name="val">New transform position local X</param>
-		public static void ChangeLocalX (Transform trans, float val) {
-			trans.localPosition = new Vector3 (val, trans.localPosition.y, trans.localPosition.z);
+		public static void ChangeLocalX (this Transform trans, float val) {
+			Vector3 pos = trans.localPosition ;
+			pos.x = val ;
+			trans.localPosition = pos ;
 		}
 
 		/// <summary>
@@ -54,8 +57,10 @@ namespace BadEggStudio.Utils {
 		/// </summary>
 		/// <param name="trans">Transform where you are going to change.</param>
 		/// <param name="val">New transform position local Y.</param>
-		public static void ChangeLocalY (Transform trans, float val) {
-			trans.localPosition = new Vector3 (trans.localPosition.x, val, trans.localPosition.z);
+		public static void ChangeLocalY (this Transform trans, float val) {
+			Vector3 pos = trans.localPosition ;
+			pos.y = val ;
+			trans.localPosition = pos ;
 		}
 
 		/// <summary>
@@ -63,8 +68,10 @@ namespace BadEggStudio.Utils {
 		/// </summary>
 		/// <param name="trans">Transform where you are going to change.</param>
 		/// <param name="val">New transform position local Z.</param>
-		public static void ChangeLocalZ (Transform trans, float val) {
-			trans.localPosition = new Vector3 (trans.localPosition.x, trans.localPosition.y, val);
+		public static void ChangeLocalZ (this Transform trans, float val) {
+			Vector3 pos = trans.localPosition ;
+			pos.z = val ;
+			trans.localPosition = pos ;
 		}
 		#endregion
 
@@ -77,8 +84,10 @@ namespace BadEggStudio.Utils {
 		/// <param name="trans">Transform where you are going to change.</param>
 		/// <param name="val">New transform position global X.</param>
 		#region Global Transform Direct Edit Methods
-		public static void ChangeGlobalX (Transform trans, float val) {
-			trans.position = new Vector3 (val, trans.position.y, trans.position.z);
+		public static void ChangeGlobalX (this Transform trans, float val) {
+			Vector3 pos = trans.position ;
+			pos.x = val ;
+			trans.position = pos ;
 		}
 
 		/// <summary>
@@ -86,8 +95,10 @@ namespace BadEggStudio.Utils {
 		/// </summary>
 		/// <param name="trans">Transform where you are going to change.</param>
 		/// <param name="val">New transform position global Y.</param>
-		public static void ChangeGlobalY (Transform trans, float val) {
-			trans.position = new Vector3 (trans.position.x, val, trans.position.z);
+		public static void ChangeGlobalY (this Transform trans, float val) {
+			Vector3 pos = trans.position ;
+			pos.y = val ;
+			trans.position = pos ;
 		}
 
 		/// <summary>
@@ -95,8 +106,10 @@ namespace BadEggStudio.Utils {
 		/// </summary>
 		/// <param name="trans">Transform where you are going to change.</param>
 		/// <param name="val">New transform position global Z.</param>
-		public static void ChangeGlobalZ (Transform trans, float val) {
-			trans.position = new Vector3 (trans.position.x, trans.position.y, val);
+		public static void ChangeGlobalZ (this Transform trans, float val) {
+			Vector3 pos = trans.position ;
+			pos.z = val ;
+			trans.position = pos ;
 		}
 		#endregion
 
