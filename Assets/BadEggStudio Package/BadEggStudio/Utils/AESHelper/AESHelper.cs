@@ -6,6 +6,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 //using System.Threading.Tasks;
+using BadEggStudio.Security;
 
 namespace BadEggStudio.Utils
 {
@@ -25,7 +26,7 @@ namespace BadEggStudio.Utils
 		// ========================================
 		// |			AES Passphrase			  |
 		// ========================================
-		private static string aesPassphrase = "PLEASE EDIT THIS FIELD FOR UPDATING THE ENCRYPTION KEY";
+		private const string aesPassphrase = "PLEASE EDIT THIS FIELD FOR UPDATING THE ENCRYPTION KEY";
 
 		// ====================================
 		// |		Main called methods		  |
@@ -36,10 +37,11 @@ namespace BadEggStudio.Utils
 		/// </summary>
 		/// <param name="input">Source which are going to be encrypted.</param>
 		public static string Encrypt (string input) {
-			byte[] key, iv;
-			DeriveKeyAndIV (RawBytesFromString (aesPassphrase), null, 1, out key, out iv);
+			// byte[] key, iv;
+			// DeriveKeyAndIV (RawBytesFromString (aesPassphrase), null, 1, out key, out iv);
 			
-			return Convert.ToBase64String (EncryptStringToBytes (input, key, iv));
+			// return Convert.ToBase64String (EncryptStringToBytes (input, key, iv));
+			return Encryption.Encrypt( input ) ;
 		}
 
 		/// <summary>
@@ -47,10 +49,11 @@ namespace BadEggStudio.Utils
 		/// </summary>
 		/// <param name="inputBase64">Encrypted source which are going to be decrypted.</param>
 		public static string Decrypt (string inputBase64) {
-			byte[] key, iv;
-			DeriveKeyAndIV (RawBytesFromString (aesPassphrase), null, 1, out key, out iv);
+			// byte[] key, iv;
+			// DeriveKeyAndIV (RawBytesFromString (aesPassphrase), null, 1, out key, out iv);
 			
-			return DecryptStringFromBytes (Convert.FromBase64String (inputBase64), key, iv);
+			// return DecryptStringFromBytes (Convert.FromBase64String (inputBase64), key, iv);
+			return Encryption.Decrypt( inputBase64 ) ;
 		}
 		#endregion
 
