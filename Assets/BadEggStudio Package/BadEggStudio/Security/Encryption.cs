@@ -1,6 +1,7 @@
 using System ;
 using System.Text;
 using BadEggStudio.Security.Internal;
+using BadEggStudio.Utils;
 
 namespace BadEggStudio.Security
 {
@@ -36,7 +37,7 @@ namespace BadEggStudio.Security
             }
 
             byte[] hash = GetBinaryHash( data, hashType ) ;
-            return Utility.ToBase64String( hash ) ;
+            return StringTools.ToBase64String( hash ) ;
 		}
 
 		public static string GetHash( string data, HashType hashType = HashType.SHA256 )
@@ -118,7 +119,7 @@ namespace BadEggStudio.Security
 
             AESCryptor.Encrypt(ref keyIndex, ref dataToEncrypt, out encrypted);
 
-            string beEncrypted = Utility.ToBase64String(encrypted);
+            string beEncrypted = StringTools.ToBase64String(encrypted);
             beEncrypted = keyIndex + Utility.SEP + beEncrypted + Utility.SEP + nonce;
 
             return beEncrypted;
@@ -152,7 +153,7 @@ namespace BadEggStudio.Security
                 return null ;
             }
 
-            byte[] encrypted = Utility.FromBase64String(beEncrypted);
+            byte[] encrypted = StringTools.FromBase64String(beEncrypted);
             byte[] binary;
 
             AESCryptor.Decrypt(ref keyIndex, ref encrypted, out binary);
@@ -198,7 +199,7 @@ namespace BadEggStudio.Security
 
             AESCryptor.Encrypt(ref keyIndex, ref binary, out encrypted);
 
-            string beEncrypted = Utility.ToBase64String(encrypted);
+            string beEncrypted = StringTools.ToBase64String(encrypted);
             beEncrypted = keyIndex + Utility.SEP + beEncrypted + Utility.SEP + nonce;
 
             return beEncrypted;
@@ -232,7 +233,7 @@ namespace BadEggStudio.Security
                 return encryptedData;
             }
 
-            byte[] encrypted = Utility.FromBase64String(beEncrypted);
+            byte[] encrypted = StringTools.FromBase64String(beEncrypted);
             byte[] binary;
 
             AESCryptor.Decrypt(ref keyIndex, ref encrypted, out binary);

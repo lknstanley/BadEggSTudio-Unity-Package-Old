@@ -1,4 +1,5 @@
 using System;
+using BadEggStudio.Utils;
 
 namespace BadEggStudio.Security.Internal
 {
@@ -20,27 +21,6 @@ namespace BadEggStudio.Security.Internal
                 }
                 return _SEPARRAY;
             }
-        }
-
-        internal static byte[] FromBase64String( string data )
-        {
-            byte[] result = null ;
-
-            try
-            {
-                result = Convert.FromBase64String(data);
-            }
-            catch( Exception )
-            {
-
-            }
-
-            return result ;
-        }
-
-        internal static string ToBase64String( byte[] data )
-        {
-            return Convert.ToBase64String(data);
         }
 
         internal static string GenerateNonce( int length )
