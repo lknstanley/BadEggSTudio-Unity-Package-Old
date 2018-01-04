@@ -1,6 +1,6 @@
 using System ;
 using System.Text;
-using Security.Internal;
+using BadEggStudio.Security.Internal;
 
 namespace BadEggStudio.Security
 {

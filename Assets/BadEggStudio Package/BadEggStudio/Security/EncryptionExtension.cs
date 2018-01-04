@@ -1,4 +1,4 @@
-using Security ;
+using BadEggStudio.Security ;
 
 public static class EncryptionExtension
 {
