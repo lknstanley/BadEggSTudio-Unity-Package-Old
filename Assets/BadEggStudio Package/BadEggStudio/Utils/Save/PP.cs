@@ -241,5 +241,9 @@ namespace BadEggStudio.Utils.Save
 
             return obj ;
         }
+
+        public static void Save() {
+            PlayerPrefs.Save();
+        }
     }
 }
