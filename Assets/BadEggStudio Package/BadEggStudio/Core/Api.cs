@@ -10,6 +10,10 @@ namespace BadEggStudio.Core {
 		string urlPrefix = "https://dev.juicyapphk.com/first_ferry_web/api";
 
 		#region Constructor
+		/// <summary>
+		/// Contructor for Api Object. It is used to init the url and get the Api object.
+		/// </summary>
+		/// <param name="urlPrefix">The target API url.</param>
 		public Api (string urlPrefix) {
 			http = new Http ();
 			this.urlPrefix = urlPrefix;
