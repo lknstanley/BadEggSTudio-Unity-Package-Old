@@ -14,7 +14,7 @@ namespace BadEggStudio.Core {
 
 		// Use this for initialization
 		void Start () {
-			api = new Api ("https://dev.juicyapphk.com/first_ferry_web/api");
+			api = new Api ("<YOUR_API_URL_HERE>");
 		}
 
 		#region UI Callbacks
